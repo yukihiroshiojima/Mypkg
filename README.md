@@ -23,7 +23,17 @@ talkerというノードから数字をカウントしてcountupというトピ�
 端末２: $ ros2 run mypkg listener
 ```
 
+
+* talk_listen.launch.pyで実行(https://github.com/yukihiroshiojima/Mypkg/blob/master/launch/talk_listen.launch.py)
+
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+
+
 # 実行結果
+
+* ros2 runでの結果
 
 ```
 [INFO] [1672457273.794839704] [listener]: Listen: 0
@@ -37,6 +47,27 @@ talkerというノードから数字をカウントしてcountupというトピ�
 [INFO] [1672457277.762693175] [listener]: Listen: 8
 [INFO] [1672457278.263079582] [listener]: Listen: 9
 [INFO] [1672457278.763043923] [listener]: Listen: 10
+```
+
+
+* launchでの結果
+
+```
+[INFO] [launch]: All log files can be found below /home/yukihiro/.ros/log/2022-12-31-16-52-00-107081-chiromaru-6678
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [6680]
+[INFO] [listener-2]: process started with pid [6682]
+[listener-2] [INFO] [1672473120.926546460] [listener]: Listen: 0
+[listener-2] [INFO] [1672473121.412751918] [listener]: Listen: 1
+[listener-2] [INFO] [1672473121.912182311] [listener]: Listen: 2
+[listener-2] [INFO] [1672473122.412812384] [listener]: Listen: 3
+[listener-2] [INFO] [1672473122.912501958] [listener]: Listen: 4
+[listener-2] [INFO] [1672473123.413315965] [listener]: Listen: 5
+[listener-2] [INFO] [1672473123.913009007] [listener]: Listen: 6
+[listener-2] [INFO] [1672473124.412924545] [listener]: Listen: 7
+[listener-2] [INFO] [1672473124.912926436] [listener]: Listen: 8
+[listener-2] [INFO] [1672473125.413064709] [listener]: Listen: 9
+[listener-2] [INFO] [1672473125.912168297] [listener]: Listen: 10
 ```
 
 

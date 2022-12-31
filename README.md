@@ -1,5 +1,5 @@
 # mypkg
-# 課題提出内容ros2のリポジトリ
+* 課題提出内容ros2のリポジトリ
 
 ![test](https://github.com/yukihiroshiojima/mypkg/actions/workflows/test.yml/badge.svg)
 
@@ -9,13 +9,23 @@
 talkerというノードから数字をカウントしてcountupというトピックを通じて送信し、listenerというノードが読み取り、出力する
 
 
-# 実行例と実行結果
+# 実行例
+
+* talker.py 
 
 ```
 端末１: $ ros2 run mypkg talker
+```
 
+*listener.py
+
+```
 端末２: $ ros2 run mypkg listener
+```
 
+# 実行結果
+
+```
 [INFO] [1672457273.794839704] [listener]: Listen: 0
 [INFO] [1672457274.260601384] [listener]: Listen: 1
 [INFO] [1672457274.762110243] [listener]: Listen: 2
@@ -37,7 +47,8 @@ talkerというノードから数字をカウントしてcountupというトピ�
 
 # ライセンス
 
+
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます
 * このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです
-* [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022
+* [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 * © 2022 Yukihiro Shiojima

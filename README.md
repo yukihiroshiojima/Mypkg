@@ -11,13 +11,13 @@ talkerというノードから数字をカウントしてcountupというトピ�
 
 # 実行例
 
-* talker.py 
+* talker.pyで実行(https://github.com/yukihiroshiojima/Mypkg/blob/lesson10/mypkg/talker.py) 
 
 ```
 端末１: $ ros2 run mypkg talker
 ```
 
-*listener.py
+* listener.pyで実行(https://github.com/yukihiroshiojima/Mypkg/blob/lesson10/mypkg/listener.py)
 
 ```
 端末２: $ ros2 run mypkg listener

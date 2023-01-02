@@ -9,31 +9,17 @@
 talkerというノードから数字をカウントしてcountupというトピックを通じて送信し、listenerというノードが読み取り、出力する
 
 
-# 実行例
+# 実行例と実行結果
 
-* talker.pyで実行(https://github.com/yukihiroshiojima/Mypkg/blob/lesson10/mypkg/talker.py) 
+* ros2 runでの実行例と実行結果
 
 ```
 端末１: $ ros2 run mypkg talker
 ```
 
-* listener.pyで実行(https://github.com/yukihiroshiojima/Mypkg/blob/lesson10/mypkg/listener.py)
-
 ```
 端末２: $ ros2 run mypkg listener
 ```
-
-
-* talk_listen.launch.pyで実行(https://github.com/yukihiroshiojima/Mypkg/blob/master/launch/talk_listen.launch.py)
-
-```
-$ ros2 launch mypkg talk_listen.launch.py
-```
-
-
-# 実行結果
-
-* ros2 runでの結果
 
 ```
 [INFO] [1672457273.794839704] [listener]: Listen: 0
@@ -49,8 +35,11 @@ $ ros2 launch mypkg talk_listen.launch.py
 [INFO] [1672457278.763043923] [listener]: Listen: 10
 ```
 
+* launchでの実行例と実行結果
 
-* launchでの結果
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
 
 ```
 [INFO] [launch]: All log files can be found below /home/yukihiro/.ros/log/2022-12-31-16-52-00-107081-chiromaru-6678
@@ -78,10 +67,46 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 # ライセンス
 
-* このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます
-* このパッケージのコードは、下記のスライド (CC-BY-SA 4.0 by Ryuichi Ueda) のものを、本人の許可を得て自身の著作としたものです
-* (https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
+* このソフトウェアパッケージは、3条項BSDライセンスの下、再頒分および使用が許可されます
+* このパッケージのコードは、下記のスライド (CC-BY-SA 4.0 by Ryuichi Ueda) のもの
+を、本人の許可を得て自身の著作としたものです
+   * (https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 * © 2022 Yukihiro Shiojima
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
